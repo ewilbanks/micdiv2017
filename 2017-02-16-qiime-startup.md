@@ -62,24 +62,5 @@ After the first login to the EC2, you do not need to repeat the chmod to change 
 Every time you start an previously-stopped EC2 instance, there will be a new Public DNS.  To connect to the EC2 after the first login, copy and paste that new Public DNS in the corresponding place below:
 
 ```
-ssh -i **/path/to/your/keyfile/**EDAMAME.pem ubuntu@"your public DNS"
+ssh -i **/path/to/your/keyfile/**EDAMAME.pem ubuntu@your public DNS
 ```
-###5. Transferring files to and from the EC2
-
-Next we will go over how to copy a file from your personal computer to your EC2 instance using `scp`. The usage is very similar to `ssh`.  
-
-Download the following file onto your laptop's Desktop by clicking [this link] (https://www.dropbox.com/s/9y41he4ol62gu0b/cloud.txt?dl=0)
-
-Now we're going to copy this file you downloaded from your laptop onto the remote EC2 machine.  
-To do this start a new terminal window.  
-**NOTE** This new window is **NOT** connected to the EC2.
-Verify this by entering the command below
-``` pwd```
-
-Start a new terminal window before executing the command below.
-```
-scp -i /Users/ewilbanks/Desktop/amazon.pem /Users/ewilbanks/Desktop/cloud.txt ubuntu@ec2-52-5-171-50.compute-1.amazonaws.com:/home/ubuntu/
-```
-Note
-
-(https://www.dropbox.com/s/9y41he4ol62gu0b/send-me-to-the-cloud.txt)
