@@ -76,3 +76,6 @@ Start a new terminal window.
 - **NOTE** This new window is *NOT* connected to the EC2.  Instead it's just your regular ole laptop
 - Verify this by entering the command below
 
+``` 
+pwd
+```
