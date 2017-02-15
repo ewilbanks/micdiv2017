@@ -64,3 +64,15 @@ Every time you start an previously-stopped EC2 instance, there will be a new Pub
 ```
 ssh -i **/path/to/your/keyfile/**EDAMAME.pem ubuntu@your public DNS
 ```
+###5. Transferring files to and from the EC2
+
+Next we will go over how to copy a file from your personal computer to your EC2 instance using `scp`. The usage is very similar to `ssh`.  
+
+Download the following file onto your laptop's Desktop by clicking [this link] (https://www.dropbox.com/s/9y41he4ol62gu0b/cloud.txt?dl=0)
+
+Now we're going to copy this file you downloaded from your laptop onto the remote EC2 machine.  
+
+Start a new terminal window.  
+- **NOTE** This new window is *NOT* connected to the EC2.  Instead it's just your regular ole laptop
+- Verify this by entering the command below
+
