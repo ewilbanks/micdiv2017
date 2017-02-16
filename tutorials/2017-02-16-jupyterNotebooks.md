@@ -1,20 +1,17 @@
 # Introduction to Jupyter (ipython) Notebooks
 
-### #0 Setup - navigating to the larger disk on our instance
-Now, since we'll be using more space this time, you want to take a look at the disks available on your instance.  
-- Do this by typing `lsblk` at the terminal prompt
-- This should show you that:
-  - your root directory `/` has only 10G of storage
-  - there's a second disk in this instance `/mnt` which has 420G of storage
-- Let's make ourselves a folder under the larger `/mnt/` directory to work out of so we don't run out of space!
-  - The `sudo` command below just means "super user" and is used to over-ride the protected permissions of this root folder
-  
-```
-sudo mkdir --mode a+rwx /mnt/workshop
-cd /mnt/workshop
-```
+![mythbusters](../img/mythbusteres.jpg)
 
-### #1 Launching the notebook server
+It's impossible to create a *reproducible* analysis if you aren't logging what you've done.  
+Duly noted.  
+But how should you do this when the science you're doing is just typing commands into the terminal?
+
+We can do better than just copy/pasting commands into a text document!
+This tutorial will walk you through the basic usage of one tool called [Jupyter notebooks](http://jupyter.org/)
+that will help you take notes and create shareable, reproducible workflows for your data analysis.
+
+
+### # Launching the notebook server & using `screen`
 We'll be working on this tutorial for a while and, as you noticed last time, sometimes the the wifi cuts out and interrupts your `ssh` connection. 
 **WHAT TO DOOOO???** 
 *SCREEN TO THE RESCUE* 
@@ -52,19 +49,29 @@ OK - but back to the point - OUR NOTEBOOK!
 Now that you've launched the notebook from your instance, you can navigate to the Jupyter notebook server using your regular internet browser window.
 
 You just need to know your instance's public DNS address and the port you set up under the security rules (8888)
+- In your internet browser type in `http://YOUR-EC2-DNS:8888` 
+- For my instance that looks like the address below
+- Note the colon between the DNS and the 8888 port
 ```
 http://ec2-204-236-222-237.compute-1.amazonaws.com:8888
 ```
 
-Well, that was boring... Fear not!  It's just because we haven't put any notebooks on our server to look at yet.  Let's do that!
+This browser is now just showing you the contents of your home directory, but, there's nothing in there.  Boring!
+
+Fear not!  It's just because we haven't put any notebooks on our server to look at yet.  Let's do that!
 
 ### #2 Getting some tutorial notebooks from the internet
-
+In your terminal window connected to your EC2 instance, let's download a notebook that you'll use as a tutorial.  
+Note how we're using `wget` to grab a file I posted publicly on the internet
 ```
-cd /mnt/workshop
+cd
 wget https://gist.githubusercontent.com/ewilbanks/2a48b63c936ee528dd681d28999eb205/raw/9b2055ad3726e87fb44a006583b5500bf2ff1ee9/notebook_introduction.ipynb
 ```
-We're also going to install one silly package that we'll use in our notebook tutorial
+We're also going to install one silly package (cowsay = "Cow Say" ... you'll see in a moment), since we'll use in our notebook tutorial.
+- Brief aside on what the command below does:
+  - `apt-get` is a package installer for Linux.  It's marvelous and will install software, along with all it's dependencies straight from the commandline. 
+  - `fortune` and `cowsay` are the name of the software packages we're installing
+  - `sudo` = super-user and will give you adminstrator priveldges needed to install software
 ```
 sudo apt-get install fortune cowsay
 ```
