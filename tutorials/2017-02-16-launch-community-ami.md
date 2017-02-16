@@ -30,11 +30,13 @@ To log into your QIIME instance, you’ll need to have ssh access (i.e., port 22
 Later in the tutorial today, you'll want to use IPython Notebook on your instance, so you need to add another security rule. You can do this by clicking the link circled in red below:
 ![Edit security rules](../img/qiime-ami-02.png)
 
-For the new secturity rule fill out the fields as shown below
+- Then click `Add rule`
+- For the new secturity rule fill out the fields as shown below
+  - The Type should be Custom TCP Rule
+  - the Protocol should be TCP
+  - the Port Range should be 8888
+  - the Source should be Anywhere.
 ![New security rule](../img/qiime-ami-03.png)
-- The Type should be Custom TCP Rule
-- the Protocol should be TCP
-- the Port Range should be 8888
-- the Source should be Anywhere.
+
 
 
