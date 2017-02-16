@@ -58,7 +58,7 @@ http://ec2-204-236-222-237.compute-1.amazonaws.com:8888
 
 Well, that was boring... Fear not!  It's just because we haven't put any notebooks on our server to look at yet.  Let's do that!
 
-#2 Getting some tutorial notebooks from the internet
+### #2 Getting some tutorial notebooks from the internet
 
 ```
 cd /mnt/workshop
@@ -74,7 +74,7 @@ Now:
 - You should now see this notebook we downloaded
 ![Notebook tutorial](../img/qiime-jupyter-server-01.png)
 
-#3 Work through the notebook tutorial
+### #3 Work through the notebook tutorial
 - Click on the notebook in the notebook server in your internet browser
 - Follow the instructions in the notebook tutorial and get a sense for how it works!
 - When you're done, you'll be ready to move on to the QIIME tutorial using the notebooks!
