@@ -76,3 +76,5 @@ wget https://www.dropbox.com/s/9y41he4ol62gu0b/cloud.txt
 `wget` stands for "web get" and it does exactly as you'd imagine - grabs data from over a network!
 
 Enough practice.  Let's move on to the next tutorial where we'l start by getting some files we'll actually work with!
+
+[Navigate to the Jupyter notebooks tutorial](https://github.com/ewilbanks/micdiv2017/blob/master/tutorials/2017-02-16-jupyterNotebooks.md)
