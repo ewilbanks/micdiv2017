@@ -1,1 +1,1 @@
-Images for micdiv2017 repository markdown files
+Files & images for micdiv2017 repository markdowns
