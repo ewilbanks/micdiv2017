@@ -16,7 +16,7 @@ We'll be working on this tutorial for a while and, as you noticed last time, som
 
 **WHAT TO DOOOO???** 
 
-*SCREEN TO THE RESCUE* 
+*`screen` TO THE RESCUE* 
 
 `screen` is a command that will keep processes running on the remote computer, even your local connection is interrupted (e.g. wifi cuts out!). 
 From your EC2 instance:
