@@ -52,5 +52,21 @@ OK - but back to the point - OUR NOTEBOOK!
 Now that you've launched the notebook from your instance, you can navigate to the Jupyter notebook server using your regular internet browser window.
 
 You just need to know your instance's public DNS address and the port you set up under the security rules (8888)
-```http://ec2-204-236-222-237.compute-1.amazonaws.com:8888```
+```
+http://ec2-204-236-222-237.compute-1.amazonaws.com:8888
+```
+
+Well, that was boring... Fear not!  It's just because we haven't put any notebooks on our server to look at yet.  Let's do that!
+
+#2 Getting some tutorial notebooks from the internet
+
+```
+cd /mnt/workshop
+wget https://github.com/ewilbanks/micdiv2017/blob/master/img/notebook_introduction.ipynb
+```
+
+- Refresh your internet browser tab that's pointed at our notebook server.
+- You should now see this notebook we downloaded
+![Notebook tutorial](../img/qiime-jupyter-server-01.png)
+
 
