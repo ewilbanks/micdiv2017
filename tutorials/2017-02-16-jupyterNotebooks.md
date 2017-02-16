@@ -73,7 +73,8 @@ Fear not!  It's just because we haven't put any notebooks on our server to look 
 In your terminal window connected to your EC2 instance, let's download a notebook that you'll use as a tutorial.  
 Note how we're using `wget` to grab a file I posted publicly on the internet
 ```
-cd https://gist.githubusercontent.com/ewilbanks/2a48b63c936ee528dd681d28999eb205/raw/9b2055ad3726e87fb44a006583b5500bf2ff1ee9/notebook_introduction.ipynb
+cd 
+wget https://gist.githubusercontent.com/ewilbanks/2a48b63c936ee528dd681d28999eb205/raw/9b2055ad3726e87fb44a006583b5500bf2ff1ee9/notebook_introduction.ipynb
 ```
 We're also going to install one silly package (cowsay = "Cow Say" ... you'll see in a moment), since we'll use in our notebook tutorial.
 - Brief aside on what the command below does:
