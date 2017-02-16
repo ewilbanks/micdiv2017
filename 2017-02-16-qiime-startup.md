@@ -1,13 +1,12 @@
-# Getting booted up with our jupyter notebooks and our tutorial for the day
+# Getting booted up and transferring files
 Authored by Lizzy Wilbanks for Swarthmore College BIOL133, Spring 2017
 using material adapted from a tutorial in EDAMAME: Explorations in Data Analysis for Metagenomic Advances in Microbial Ecology 2015
 [EDAMAME-2015 EC2-files tutorial](https://github.com/edamame-course/2015-tutorials/blob/master/final/2015-06-22-EC2_Connection_FileTransfer.md)
 
-Today's tutorial will introduce you to a few important topics, including HOW TO:
+This section of the tutorial will teach or remind you HOW TO:
+- Launch your EC2 machine
 - Transfer files between your AWS EC2 instance and your laptop using `scp`
 - Download publicly-hosted data to an EC2 instance using `wget`  
-- Use Jupyter notebooks to follow tutorials or take kickass computational notes
-- Start using QIIME, the major software pipeline for analyzing high throughput 16S rRNA gene sequence data
 
 ## Launch an EC2 instance 
 This should be the same as last time! Click [here for the reminder tutorial of how to do this] (http://angus.readthedocs.io/en/2016/amazon/index.html)
