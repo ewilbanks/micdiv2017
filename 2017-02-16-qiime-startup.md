@@ -118,7 +118,16 @@ Here's an example where I'm moving the file to my Desktop folder from my EC2 ins
 scp -i /Users/ewilbanks/Desktop/amazon.pem ubuntu@ec2-52-5-171-50.compute-1.amazonaws.com:/home/ubuntu/new-cloud.txt /Users/ewilbanks/Desktop/ 
 ```
 
+###6. Using `wget` to download public data
+What if you wanted to download that cloud.txt file *directly* onto your EC2 instance?  
+After all, you downloaded it from a public dropbox link!
 
+From your terminal window connected to your EC2 instance:
+```
+wget https://www.dropbox.com/s/9y41he4ol62gu0b/cloud.txt
 
+```
 
+`wget` stands for "web get" and it does exactly as you'd imagine - grabs data from over a network!
 
+Enough practice.  Let's move on to the next tutorial where we'l start by getting some files we'll actually work with!
