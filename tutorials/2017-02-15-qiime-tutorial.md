@@ -6,7 +6,7 @@ Navigate to your terminal that is ssh'd into the EC2 instance that you've launch
 Download the QIIME ipython notebook tutorial 
 
 ```
-wget https://raw.githubusercontent.com/biocore/qiime/1.9.1/examples/ipynb/illumina_overview_tutorial_workshop_template.ipynb
+wget https://raw.githubusercontent.com/biocore/qiime/1.9.1/examples/ipynb/illumina_overview_tutorial.ipynb
 ```
 
 - Now go to your internet browser that's open to your notebook server adress
