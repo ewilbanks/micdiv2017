@@ -44,7 +44,8 @@ Later in the tutorial today, you'll want to use IPython Notebook on your instanc
 
 ### *Need another walk through of how to log into you EC2 instance?*
 *Keep reading, otherwise move on to the next section!*
-[Navigate to the data transfer section of tutorial](https://github.com/ewilbanks/micdiv2017/blob/master/tutorials/2017-02-16-qiime-startup.md)
+
+[Navigate to the data transfer section of tutorial](https://github.com/ewilbanks/micdiv2017/blob/master/tutorials/2017-02-16-transferring-files.md)
 
 ####0. Find your EC2's Public DNS:
 Before you can connect to your EC2 instance you first need to find its Public DNS. This essentially acts as an address for your EC2 instance so that your local computer can access it. Go to [AWS](http://aws.amazon.com/) and sign into the Console. Select EC2, and then view your running instances. On this page, click on your instance and find it's public DNS under the "Description" tab.
@@ -96,6 +97,6 @@ ssh -i **/path/to/your/keyfile/**EDAMAME.pem ubuntu@"your public DNS"
 
 OK - now you're really ready.  
 
-[Navigate to the data transfer section of tutorial](https://github.com/ewilbanks/micdiv2017/blob/master/tutorials/2017-02-16-qiime-startup.md)
+[Navigate to the data transfer section of tutorial](https://github.com/ewilbanks/micdiv2017/blob/master/tutorials/2017-02-16-transferring-files.md)
 
 
