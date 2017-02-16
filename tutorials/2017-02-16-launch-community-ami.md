@@ -41,7 +41,53 @@ Later in the tutorial today, you'll want to use IPython Notebook on your instanc
 ### Now log into your QIIME EC2 instance
 - On the EC2 console, look up the public DNS for your instance.
 - Open a terminal window (of Mobaxterm for Windows users) and `ssh` into your instance
+- *Don't remember how to do these things?  Keep reading for a walk through below*
 
-``` 
-ssh -i /Users/ewilbanks/Desktop/amazon.pem ubuntu@ec2-204-236-222-237.compute-1.amazonaws.com 
+
+####0. Find your EC2's Public DNS:
+Before you can connect to your EC2 instance you first need to find its Public DNS. This essentially acts as an address for your EC2 instance so that your local computer can access it. Go to [AWS](http://aws.amazon.com/) and sign into the Console. Select EC2, and then view your running instances. On this page, click on your instance and find it's public DNS under the "Description" tab.
+
+![PublicDNS](https://github.com/ewilbanks/2015-tutorials/blob/master/img/EC2_Public_DNS.png?raw=true)
+
+In the image above the full Public DNS of the highlighted instance is **ec2-52-5-171-50.compute-1.amazonaws.com**
+
+####1. Open a Terminal:
+- **Windows users** Use MobaXterm [here](http://mobaxterm.mobatek.net/download.html) to use as your terminal. 
+- **MAC Users:** Terminal is under: Applications --> Utilities
+- **Linux Users:** Press Ctrl + Alt + t
+
+You will need to know the location of your **key pair** you created when you launched your instance.  Usually this will be in your "Downloads" folder, but you may want to move it elsewhere.
+ 
+```
+cd /Downloads
+```
+
+You will need to know what your Public DNS is for your EC2 Instance.
+
+####2. Change your keyfile permisions to read only:
+
+```
+chmod 400 **/path/to/your/keyfile/**.pem
+```
+This command will adjust the permissions on your keyfile so that it cannot be edited. This is important because if the keyfile is edited or changed, it will no longer allow access to the EC2 instance.
+
+####3. Connecting to your EC2 instance using ssh:
+
+```
+ssh -i **/path/to/your/keyfile/**eda.pem ubuntu@"your public DNS"
+```
+
+
+
+On your first login, you may get a prompt stating that the host authenticity cannot be established, are you sure you want to continue?  Yes, you really do.
+
+SUCCESS! You have now logged into your computer in the cloud!
+
+###4. After the first login
+
+After the first login to the EC2, you do not need to repeat the chmod to change permissions for the key.
+Every time you start an previously-stopped EC2 instance, there will be a new Public DNS.  To connect to the EC2 after the first login, copy and paste that new Public DNS in the corresponding place below:
+
+```
+ssh -i **/path/to/your/keyfile/**EDAMAME.pem ubuntu@"your public DNS"
 ```
