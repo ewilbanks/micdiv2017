@@ -14,4 +14,4 @@ Click here to learn more about [what *exactly* AMIs are](http://docs.aws.amazon.
 - We want the first one circled in red below (qiime-191 - ami-1918ff72)
 - You can also always find the most recent QIIME AMIs listed [here](http://qiime.org/home_static/dataFiles.html)
 
-![Community AMI image]
+![Community AMI image](../img/qiime-ami-01.png)
