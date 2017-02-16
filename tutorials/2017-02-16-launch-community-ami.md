@@ -11,7 +11,7 @@ Click here to learn more about [what *exactly* AMIs are](http://docs.aws.amazon.
 - Click on launch an instance
 - At the left click on the sidebar that says "Community AMI"
 - Under Community AMIs search for "qiime" to pull up machines that match that.  
-- We want the first one circled in red below (qiime-191 - ami-1918ff72)
+- We want the first one listed below (qiime-191 - ami-1918ff72)
 - You can also always find the most recent QIIME AMIs listed [here](http://qiime.org/home_static/dataFiles.html)
 
 ![Community AMI image](../img/qiime-ami-01.png)
