@@ -13,8 +13,11 @@ that will help you take notes and create shareable, reproducible workflows for y
 
 ### # Launching the notebook server & using `screen`
 We'll be working on this tutorial for a while and, as you noticed last time, sometimes the the wifi cuts out and interrupts your `ssh` connection. 
+
 **WHAT TO DOOOO???** 
+
 *SCREEN TO THE RESCUE* 
+
 `screen` is a command that will keep processes running on the remote computer, even your local connection is interrupted (e.g. wifi cuts out!). 
 From your EC2 instance:
 ```
