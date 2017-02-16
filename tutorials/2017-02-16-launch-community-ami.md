@@ -38,5 +38,10 @@ Later in the tutorial today, you'll want to use IPython Notebook on your instanc
   - the Source should be Anywhere.
 ![New security rule](../img/qiime-ami-03.png)
 
+### Now log into your QIIME EC2 instance
+- On the EC2 console, look up the public DNS for your instance.
+- Open a terminal window (of Mobaxterm for Windows users) and `ssh` into your instance
 
-
+``` 
+ssh -i /Users/ewilbanks/Desktop/amazon.pem ubuntu@ec2-204-236-222-237.compute-1.amazonaws.com 
+```
