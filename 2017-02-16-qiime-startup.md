@@ -13,11 +13,7 @@ This should be the same as last time! Click [here for the reminder tutorial of h
 Make sure you're in the US East "north Virginia" region.
 [Amazon EC2 console] (https://console.aws.amazon.com/ec2)
 
-***
-##Windows users
-Download MobaXterm [here](http://mobaxterm.mobatek.net/download.html) to use as your terminal. 
 
-##Mac OS & Linux Users, connecting to your Amazon EC2 instance at the command line is pretty easy.
 ###0. Find your EC2's Public DNS:
 Before you can connect to your EC2 instance you first need to find its Public DNS. This essentially acts as an address for your EC2 instance so that your local computer can access it. Go to [AWS](http://aws.amazon.com/) and sign into the Console. Select EC2, and then view your running instances. On this page, click on your instance and find it's public DNS under the "Description" tab.
 
@@ -26,7 +22,7 @@ Before you can connect to your EC2 instance you first need to find its Public DN
 In the image above the full Public DNS of the highlighted instance is **ec2-52-5-171-50.compute-1.amazonaws.com**
 
 ###1. Open a Terminal:
-
+**Windows users** Use MobaXterm [here](http://mobaxterm.mobatek.net/download.html) to use as your terminal. 
 **MAC Users:** Terminal is under: Applications --> Utilities
 **Linux Users:** Press Ctrl + Alt + t
 
