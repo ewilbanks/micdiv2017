@@ -116,7 +116,7 @@ scp -i "path to your keyfile.pem" ubuntu@"your public DNS":"path to the file you
 
 Here's an example where I'm moving the file to my Desktop folder from my EC2 instance
 ```
-scp -i /Users/ewilbanks/Desktop/amazon.pem ubuntu@ec2-52-5-171-50.compute-1.amazonaws.com:/home/ubuntu/ /Users/ewilbanks/Desktop/cloud.txt 
+scp -i /Users/ewilbanks/Desktop/amazon.pem ubuntu@ec2-52-5-171-50.compute-1.amazonaws.com:/home/ubuntu/new-cloud.txt /Users/ewilbanks/Desktop/ 
 ```
 
 
