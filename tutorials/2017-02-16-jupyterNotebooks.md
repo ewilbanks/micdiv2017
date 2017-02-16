@@ -62,7 +62,7 @@ Well, that was boring... Fear not!  It's just because we haven't put any noteboo
 
 ```
 cd /mnt/workshop
-wget https://dl.dropboxusercontent.com/u/2796343/notebook-introduction.ipynb
+wget https://gist.githubusercontent.com/ewilbanks/2a48b63c936ee528dd681d28999eb205/raw/9b2055ad3726e87fb44a006583b5500bf2ff1ee9/notebook_introduction.ipynb
 ```
 We're also going to install one silly package that we'll use in our notebook tutorial
 ```
