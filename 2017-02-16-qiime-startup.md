@@ -62,9 +62,25 @@ After the first login to the EC2, you do not need to repeat the chmod to change 
 Every time you start an previously-stopped EC2 instance, there will be a new Public DNS.  To connect to the EC2 after the first login, copy and paste that new Public DNS in the corresponding place below:
 
 ```
-ssh -i **/path/to/your/keyfile/**EDAMAME.pem ubuntu@your public DNS
+ssh -i **/path/to/your/keyfile/**EDAMAME.pem ubuntu@"your public DNS"
 ```
-###5. Transferring files to and from the EC2
+
+###5.  Where am I?  
+Sometimes, all the terminal screens sort of look the same!  
+When you're copying files back and forth, it's important know if your terminal is connected to your EC2 machine, or just working on your local laptop machine!
+
+Keep your terminal window open where you have `ssh` into the EC2 machine. 
+
+Now, start another, new terminal window.  
+- **NOTE** This new window is *NOT* connected to the EC2.  Instead it's just your regular ole laptop
+- Verify this by entering the command below in both of your open windows (new and old!)
+
+``` 
+pwd
+```
+- See how they're different? One you've connected to EC2 (ubuntu), the other is just your local machine (whatever your user name is)
+
+###6. Transferring files to and from the EC2
 
 Next we will go over how to copy a file from your personal computer to your EC2 instance using `scp`. The usage is very similar to `ssh`.  
 
@@ -72,10 +88,38 @@ Download the following file onto your laptop's Desktop by clicking [this link] (
 
 Now we're going to copy this file you downloaded from your laptop onto the remote EC2 machine.  
 
-Start a new terminal window.  
-- **NOTE** This new window is *NOT* connected to the EC2.  Instead it's just your regular ole laptop
-- Verify this by entering the command below
-
-``` 
-pwd
+Find your terminal window that's just your local machine (see above) and run the appropriate version 
+of the command below.  
+*NOTE* you have to adapt this command to give it the right paths and DNS info!
 ```
+scp -i **/path/to/your/keyfile.pem** **path/to/the/file/you/want/to/copy** ubuntu@"your public DNS":**/path/where/to /copy/the/file**
+```
+How do you know where you want to put the file?  
+- Look first at the directory structure on your EC2 machine
+- Type `pwd` once you've navigatated where you want to put this file!
+- put that path after the colon in the example above
+
+An example from my file structure and EC2 instance!
+```
+scp -i /Users/ewilbanks/Desktop/amazon.pem /Users/ewilbanks/Desktop/cloud.txt ubuntu@ec2-52-5-171-50.compute-1.amazonaws.com:/home/ubuntu/
+```
+
+Now look on your EC2 machine and use `nano` to open the file.
+Make some changes to this file by adding some text.
+
+Now we'll copy this modified file back to your laptop:
+- use the terminal window that is connected to your local machine
+- We'll use a similar command to that above, but just switch the second and third arguments
+```
+scp -i "path to your keyfile.pem" ubuntu@"your public DNS":"path to the file you want to copy" "path where to save the file on your computer"
+```
+
+Here's an example where I'm moving the file to my Desktop folder from my EC2 instance
+```
+scp -i /Users/ewilbanks/Desktop/amazon.pem ubuntu@ec2-52-5-171-50.compute-1.amazonaws.com:/home/ubuntu/ /Users/ewilbanks/Desktop/cloud.txt 
+```
+
+
+
+
+
