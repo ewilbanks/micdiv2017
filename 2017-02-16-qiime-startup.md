@@ -22,11 +22,9 @@ Before you can connect to your EC2 instance you first need to find its Public DN
 In the image above the full Public DNS of the highlighted instance is **ec2-52-5-171-50.compute-1.amazonaws.com**
 
 ###1. Open a Terminal:
-**Windows users** Use MobaXterm [here](http://mobaxterm.mobatek.net/download.html) to use as your terminal. 
-
-**MAC Users:** Terminal is under: Applications --> Utilities
-
-**Linux Users:** Press Ctrl + Alt + t
+- **Windows users** Use MobaXterm [here](http://mobaxterm.mobatek.net/download.html) to use as your terminal. 
+- **MAC Users:** Terminal is under: Applications --> Utilities
+- **Linux Users:** Press Ctrl + Alt + t
 
 You will need to know the location of your **key pair** you created when you launched your instance.  Usually this will be in your "Downloads" folder, but you may want to move it elsewhere.
  
