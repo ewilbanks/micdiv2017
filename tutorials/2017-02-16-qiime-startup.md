@@ -1,4 +1,4 @@
-# Getting booted up and transferring files
+# Transferring files
 Authored by Lizzy Wilbanks for Swarthmore College BIOL133, Spring 2017
 using material adapted from a tutorial in EDAMAME: Explorations in Data Analysis for Metagenomic Advances in Microbial Ecology 2015
 [EDAMAME-2015 EC2-files tutorial](https://github.com/edamame-course/2015-tutorials/blob/master/final/2015-06-22-EC2_Connection_FileTransfer.md)
