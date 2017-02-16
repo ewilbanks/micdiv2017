@@ -22,7 +22,7 @@ Download MobaXterm [here](http://mobaxterm.mobatek.net/download.html) to use as 
 ###0. Find your EC2's Public DNS:
 Before you can connect to your EC2 instance you first need to find its Public DNS. This essentially acts as an address for your EC2 instance so that your local computer can access it. Go to [AWS](http://aws.amazon.com/) and sign into the Console. Select EC2, and then view your running instances. On this page, click on your instance and find it's public DNS under the "Description" tab.
 
-![PublicDNS](../img/EC2_Public_DNS.png)
+![PublicDNS](https://github.com/ewilbanks/2015-tutorials/blob/master/img/EC2_Public_DNS.png?raw=true)
 
 In the image above the full Public DNS of the highlighted instance is **ec2-52-5-171-50.compute-1.amazonaws.com**
 
