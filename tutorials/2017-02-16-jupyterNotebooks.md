@@ -52,5 +52,5 @@ OK - but back to the point - OUR NOTEBOOK!
 Now that you've launched the notebook from your instance, you can navigate to the Jupyter notebook server using your regular internet browser window.
 
 You just need to know your instance's public DNS address and the port you set up under the security rules (8888)
-`http://ec2-204-236-222-237.compute-1.amazonaws.com:8888`
+```http://ec2-204-236-222-237.compute-1.amazonaws.com:8888```
 
