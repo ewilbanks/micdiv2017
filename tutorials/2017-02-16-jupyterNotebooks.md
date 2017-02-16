@@ -62,11 +62,19 @@ Well, that was boring... Fear not!  It's just because we haven't put any noteboo
 
 ```
 cd /mnt/workshop
-wget https://github.com/ewilbanks/micdiv2017/blob/master/img/notebook_introduction.ipynb
+wget https://dl.dropboxusercontent.com/u/2796343/notebook-introduction.ipynb
 ```
-
+We're also going to install one silly package that we'll use in our notebook tutorial
+```
+sudo apt-get install fortune cowsay
+```
+Type `Y` followed by `enter` when prompted
+Now:
 - Refresh your internet browser tab that's pointed at our notebook server.
 - You should now see this notebook we downloaded
 ![Notebook tutorial](../img/qiime-jupyter-server-01.png)
 
-
+#3 Work through the notebook tutorial
+- Click on the notebook in the notebook server in your internet browser
+- Follow the instructions in the notebook tutorial and get a sense for how it works!
+- When you're done, you'll be ready to move on to the QIIME tutorial using the notebooks!
