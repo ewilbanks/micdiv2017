@@ -79,7 +79,7 @@ pwd
 ```
 - See how they're different? One you've connected to EC2 (ubuntu), the other is just your local machine (whatever your user name is)
 
-###6. Transferring files to and from the EC2
+###6. Using `scp` to transfer files between your machine and your EC2 instance
 
 Next we will go over how to copy a file from your personal computer to your EC2 instance using `scp`. The usage is very similar to `ssh`.  
 
