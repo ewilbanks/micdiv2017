@@ -1,7 +1,7 @@
 # Notes on working with Tessa to set up the smrt-analysis ami on AWS
 * launching 2.3.0 smrtanalysis ami
 * having issues since its running an old linux OS (lucid)
-** couldn't apt-get install anything
+* couldn't apt-get install anything
 
 ### Below was what we ran to get it to update from lucid -> precise
 `lsb_release –a` shows you the version of the OS you're running
