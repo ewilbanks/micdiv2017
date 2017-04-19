@@ -11,17 +11,17 @@ jupyter notebook --generate-config`
 ### Writing default config to: 
 `/home/ubuntu/.jupyter/jupyter_notebook_config.py`
 ### opened notebook server
-jupyter notebook --ip=* --no-browser
+`jupyter notebook --ip=* --no-browser`
 ### in parallel screen ran
-jupyter notebook list
+`jupyter notebook list`
 ### used token to get into notebook
 ### ran the following as a cell in ipython notebook
-  from IPython.lib import passwd
+`  from IPython.lib import passwd
   password = passwd("secret")
-  password
+  password`
 
-##Edited config file to be the one in this repo, with password specific to the one generated previously
+### Edited config file to be the one in this repo, with password specific to the one generated previously
 
-##jupyter must be launched with jupyter notebook --ip=* --no-browser  
-##trying to put this into the config file isn't working :(
+### jupyter must be launched with `jupyter notebook --ip=* --no-browser`
+### trying to put this into the config file isn't working :(
 
