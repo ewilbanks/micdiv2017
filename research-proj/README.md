@@ -2,6 +2,7 @@
 
 ------
 ##Setting up jupyter notebook server on a new machine
+
 `wget https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh
 bash Anaconda3-4.3.1-Linux-x86_64.sh`
 ### added to anaconda3 folder bin to path, 
