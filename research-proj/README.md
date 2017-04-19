@@ -1,36 +1,17 @@
+# Notes on working with Tessa to set up the smrt-analysis ami on AWS
+* launching 2.3.0 smrtanalysis ami
+* having issues since its running an old linux OS (lucid)
+** couldn't apt-get install anything
 
+### Below was what we ran to get it to update from lucid -> precise
+`lsb_release –a` shows you the version of the OS you're running
 
-------
-# Setting up jupyter notebook server on a new machine
-
 ```
-wget https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh
-bash Anaconda3-4.3.1-Linux-x86_64.sh
+sudo apt-get update
+do-release-upgrade
+sudo apt-get install -o APT::Immediate-Configure=false -f apt python-minimal
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo apt-get install default-jre
 ```
-### added to anaconda3 folder bin to path, 
-```
-conda upgrade notebook
-jupyter notebook --generate-config
-```
-### Writing default config to: 
-`/home/ubuntu/.jupyter/jupyter_notebook_config.py`
-### opened notebook server
-`jupyter notebook --ip=* --no-browser`
-### in parallel screen ran
-`jupyter notebook list`
-### used token to get into notebook
-### ran the following as a cell in ipython notebook
-```
-from IPython.lib import passwd
-  password = passwd("secret")
-  password
-```
-
-### Edited config file to be the one in this repo, with password specific to the one generated previously
-
-### jupyter must be launched with:
-```
-jupyter notebook --ip=* --no-browser
-```
-### trying to put this into the config file isn't working :(
-
