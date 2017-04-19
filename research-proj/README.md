@@ -16,9 +16,9 @@ jupyter notebook --generate-config`
 `jupyter notebook list`
 ### used token to get into notebook
 ### ran the following as a cell in ipython notebook
-`  from IPython.lib import passwd
-  password = passwd("secret")
-  password`
+`  from IPython.lib import passwd`
+`  password = passwd("secret")`
+`  password`
 
 ### Edited config file to be the one in this repo, with password specific to the one generated previously
 
