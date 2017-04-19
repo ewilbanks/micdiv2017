@@ -1,7 +1,7 @@
 
 
 ------
-##Setting up jupyter notebook server on a new machine
+# Setting up jupyter notebook server on a new machine
 
 `wget https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh
 bash Anaconda3-4.3.1-Linux-x86_64.sh`
@@ -16,9 +16,11 @@ jupyter notebook --generate-config`
 `jupyter notebook list`
 ### used token to get into notebook
 ### ran the following as a cell in ipython notebook
-`  from IPython.lib import passwd`
-`  password = passwd("secret")`
-`  password`
+```
+from IPython.lib import passwd
+  password = passwd("secret")
+  password
+```
 
 ### Edited config file to be the one in this repo, with password specific to the one generated previously
 
