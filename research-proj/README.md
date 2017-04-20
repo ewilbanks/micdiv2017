@@ -39,3 +39,11 @@ To update your local repo from the server:
 ```
 git pull
 ```
+------
+## Working on getting dependencies for cerulean working properly
+* Need `blasr` in the system path, initially wasn't 
+* Found folder of executable files and adding to .bashrc `$PATH`
+```
+#adding smrt analysis executables to path
+export PATH="/opt/smrtanalysis/current/analysis/bin/:$PATH"
+```
