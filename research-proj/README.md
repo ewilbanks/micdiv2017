@@ -1,4 +1,4 @@
-# Notes on working with Tessa to set up the smrt-analysis ami on AWS
+# Notes on working with Tessa to set up Cerulean to run on the smrt-analysis ami w/ AWS
 * launching 2.3.0 smrtanalysis ami
 * having issues since its running an old linux OS (lucid)
 * couldn't apt-get install anything
