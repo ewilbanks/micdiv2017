@@ -76,7 +76,7 @@ Please check out: http://continuum.io/thanks and https://anaconda.org
 * Also added the bin file location for PB-suite and the `SWEETPATH` environmental variable that it needed
 ```
 ### pythonpath
-export PYTHONPATH="home/ubuntu/anaconda2/pkgs:/home/ubuntu/anaconda2/lib/python27.zip:/home/ubuntu/anaconda2/lib/python2.7:/home/ubuntu/anaconda2/lib/python2.7/plat-linux2:/home/ubuntu/ana$
+export PYTHONPATH="home/ubuntu/anaconda2/pkgs:/home/ubuntu/anaconda2/lib/python27.zip:/home/ubuntu/anaconda2/lib/python2.7:/home/ubuntu/anaconda2/lib/python2.7/plat-linux2:/home/ubuntu/anaconda2/lib/python2.7/lib-tk:/home/ubuntu/anaconda2/lib/python2.7/lib-old:/home/ubuntu/anaconda2/lib/python2.7/lib-dynload:/home/ubuntu/anaconda2/lib/python2.7/site-packages:/home/ubuntu/PBSuite_15.8.24"
 # adding pbsuite
 export PATH="$PATH:/home/ubuntu/PBSuite_15.8.24/bin"
 export SWEETPATH=/home/ubuntu/PBSuite_15.8.24
